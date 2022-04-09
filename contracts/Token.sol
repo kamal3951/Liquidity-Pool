@@ -41,13 +41,15 @@ contract Token is ERC20, AccessControl, Pausable {
         _;
     }
 
-    function Transfer(address recipient, uint256 amount)
+    function transfer(address recipient, uint256 amount)
         public
         virtual
+        override
         onlyAdmin
         setPaused
         returns (bool)
     {
-        transfer(recipient, amount);
+        super.transfer(recipient, amount);
+        return true;
     }
 }

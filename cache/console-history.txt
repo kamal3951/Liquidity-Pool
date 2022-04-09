@@ -1,3 +1,21 @@
+cls
+clear
+clear()
+await ('0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199').getBalance();
+await ('0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199').getBalance()
+await ('0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199').getBalance
+('0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199').getBalance
+token.mint('0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199',99999999)
+token.mint('0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199')
+const token = await Token.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3')
+const Token = await ethers.getContractFactory('Token');
+cls
+await ('0x70997970c51812dc3a010c7d01b50e0d17dc79c8').balance()
+await ('0x70997970c51812dc3a010c7d01b50e0d17dc79c8').balance
+('0x70997970c51812dc3a010c7d01b50e0d17dc79c8').balance
+await token.mint('0x70997970c51812dc3a010c7d01b50e0d17dc79c8',9999999999)
+const token = await Token.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0')
+const Token = await ethers.getContractFactory("Token");
 await token.mint("0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",999999)
 await token.mint("0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",99)
 const token = await Token.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3')
