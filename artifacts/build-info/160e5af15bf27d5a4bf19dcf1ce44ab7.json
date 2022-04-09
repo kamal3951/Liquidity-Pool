@@ -1,0 +1,175 @@
+{
+  "id": "160e5af15bf27d5a4bf19dcf1ce44ab7",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.8.0",
+  "solcLongVersion": "0.8.0+commit.c7dfd78e",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/pool.sol": {
+        "content": "//SPDX-License-Identifier:MIT\r\npragma solidity >=0.8.0 <0.9.0;\r\n\r\ncontract pool {\r\n    string private poolPairName;\r\n\r\n    constructor() {}\r\n}\r\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/pool.sol": {
+        "pool": {
+          "abi": [
+            {
+              "inputs": [],
+              "stateMutability": "nonpayable",
+              "type": "constructor"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "generatedSources": [],
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220c825435c5d078d2d0e2bfb9e723307f3bc24d45db444e190803ad315c07cafa464736f6c63430008000033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC8 0x25 NUMBER 0x5C 0x5D SMOD DUP14 0x2D 0xE 0x2B 0xFB SWAP15 PUSH19 0x3307F3BC24D45DB444E190803AD315C07CAFA4 PUSH5 0x736F6C6343 STOP ADDMOD STOP STOP CALLER ",
+              "sourceMap": "66:76:0:-:0;;;123:16;;;;;;;;;;66:76;;;;;;"
+            },
+            "deployedBytecode": {
+              "generatedSources": [],
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "6080604052600080fdfea2646970667358221220c825435c5d078d2d0e2bfb9e723307f3bc24d45db444e190803ad315c07cafa464736f6c63430008000033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC8 0x25 NUMBER 0x5C 0x5D SMOD DUP14 0x2D 0xE 0x2B 0xFB SWAP15 PUSH19 0x3307F3BC24D45DB444E190803AD315C07CAFA4 PUSH5 0x736F6C6343 STOP ADDMOD STOP STOP CALLER ",
+              "sourceMap": "66:76:0:-:0;;;;;"
+            },
+            "methodIdentifiers": {}
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/pool.sol\":\"pool\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/pool.sol\":{\"keccak256\":\"0x36b297a79cc1ee9c42f6324ffece399b573ee0b238d92a76e6a7e8cef019af7f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://283aed9b81e7cde6254bebb729e54ad0bdbfd320db7d86ada1df3c82e327c7aa\",\"dweb:/ipfs/QmVf99btuUn9hYGgKfdANMjDoPt8TPzwDX2ZdD3UUs1kEH\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "contracts/pool.sol": {
+        "ast": {
+          "absolutePath": "contracts/pool.sol",
+          "exportedSymbols": {
+            "pool": [
+              8
+            ]
+          },
+          "id": 9,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                ">=",
+                "0.8",
+                ".0",
+                "<",
+                "0.9",
+                ".0"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "31:31:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "fullyImplemented": true,
+              "id": 8,
+              "linearizedBaseContracts": [
+                8
+              ],
+              "name": "pool",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "mutability": "mutable",
+                  "name": "poolPairName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "87:27:0",
+                  "stateVariable": true,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "87:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "private"
+                },
+                {
+                  "body": {
+                    "id": 6,
+                    "nodeType": "Block",
+                    "src": "137:2:0",
+                    "statements": []
+                  },
+                  "id": 7,
+                  "implemented": true,
+                  "kind": "constructor",
+                  "modifiers": [],
+                  "name": "",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 4,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "134:2:0"
+                  },
+                  "returnParameters": {
+                    "id": 5,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "137:0:0"
+                  },
+                  "scope": 8,
+                  "src": "123:16:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "public"
+                }
+              ],
+              "scope": 9,
+              "src": "66:76:0"
+            }
+          ],
+          "src": "31:113:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

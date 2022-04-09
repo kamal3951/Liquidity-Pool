@@ -1,0 +1,16 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "pool",
+  "sourceName": "contracts/pool.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220c825435c5d078d2d0e2bfb9e723307f3bc24d45db444e190803ad315c07cafa464736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220c825435c5d078d2d0e2bfb9e723307f3bc24d45db444e190803ad315c07cafa464736f6c63430008000033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
